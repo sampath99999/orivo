@@ -50,7 +50,7 @@ function FollowList() {
                                     <img
                                         src={item.image}
                                         alt={item.title}
-                                        className="w-[35px] rounded-full"
+                                        className="w-[30px] rounded-full"
                                     />
                                     <div className="flex items-center justify-between flex-1">
                                         <div className="">

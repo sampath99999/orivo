@@ -14,21 +14,33 @@ function MyProjectsForRightSidebar() {
             title: "zentro",
             image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVM7cBdLjOd3EyD-NPEu43jIDk3FfbMsp97g&s",
             slug: "zentro_cms",
-        }
+        },
     ]);
     return (
         <>
             <div className="mt-5 flex flex-col">
-                <h3 className="font-medium text-sm text-slate-600 mt-5">
-                    My Projects
-                </h3>
+                <div className="flex items-center justify-between mt-5">
+                    <h3 className="font-medium text-sm text-slate-600">
+                        My Projects
+                    </h3>
+                    <a className="text-xs text-gray-500 underline hover:text-blue-500 cursor-pointer">View All</a>
+                </div>
                 <ul className="mt-5 gap-3 flex flex-col">
                     {projects.map((project) => (
-                        <li key={project.id} className="flex items-center gap-2">
-                            <img src={project.image} className="w-[30px]" alt="" />
+                        <li
+                            key={project.id}
+                            className="flex items-center gap-2"
+                        >
+                            <img
+                                src={project.image}
+                                className="w-[30px]"
+                                alt=""
+                            />
                             <div className="flex items-center justify-between flex-1">
                                 <div className="">
-                                    <p className="text-md font-medium">{project.title}</p>
+                                    <p className="text-md font-medium">
+                                        {project.title}
+                                    </p>
                                     <p className="text-xs text-slate-400">
                                         {project.slug}
                                     </p>
