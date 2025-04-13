@@ -13,7 +13,7 @@ function ProfileDropdown() {
         <>
             <div className="flex items-center justify-start">
                 <DropdownMenu>
-                    <DropdownMenuTrigger className="focus:outline-none">
+                    <DropdownMenuTrigger className="focus:outline-none" asChild>
                         <Button variant={"ghost"} className="cursor-pointer">
                             <svg
                                 viewBox="0 0 24 24"

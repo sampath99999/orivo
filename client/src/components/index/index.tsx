@@ -8,7 +8,7 @@ function HomePage() {
         <>
            <div className="flex min-h-screen container mx-auto">
                 <Sidebar />
-                <div className="flex-1 content">
+                <div className="flex-1 content p-2">
                     <Outlet />
                 </div>
                 <SidebarRight />
