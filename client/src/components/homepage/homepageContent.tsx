@@ -1,5 +1,3 @@
-import HomepageFeed from "./feed";
-
 function HomePageContent() {
     return (
         <>
